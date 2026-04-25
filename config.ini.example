@@ -1,0 +1,8 @@
+[Settings]
+ips=["192.168.1.200"]
+names=["3"]
+tenantId="your_tenant_id"
+endPoint="http://localhost:7777/api/v1/movement/add"
+dbUrl="jdbc:mysql://localhost:3306/your_database"
+dbUser="root"
+dbPassword="your_password"
