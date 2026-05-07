@@ -25,7 +25,8 @@ import org.apache.logging.log4j.Logger;
 public class RfidService implements RfidReaderTask.TagListener {
     private static final Logger logger = LogManager.getLogger(RfidService.class);
 
-//    private final DateTimeFormatter timeFormatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+    // private final DateTimeFormatter timeFormatter =
+    // DateTimeFormatter.ofPattern("HH:mm:ss");
     private final DateTimeFormatter apiTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     private final ExecutorService executorService = Executors.newCachedThreadPool();
@@ -220,10 +221,6 @@ public class RfidService implements RfidReaderTask.TagListener {
 
     private void log(String ip, String message) {
         logger.info("[{}] {}", ip, message);
-    }
-
-    private void apiLog(String ip, String message) {
-        logger.info("[API] [{}] {}", ip, message);
     }
 
     /**
